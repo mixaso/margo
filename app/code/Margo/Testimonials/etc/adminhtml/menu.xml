@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Margo_Testimonials::testimonials"
+             title="testimonials"
+             translate="title"
+             module="Margo_Testimonials"
+             sortOrder="20"
+             resource="Margo_Testimonials::testimonials"
+        />
+        <add id="Margo_Testimonials::testimonials_all"
+             title="All Testimonials"
+             translate="title"
+             module="Margo_Testimonials"
+             sortOrder="10"
+             parent="Margo_Testimonials::testimonials"
+             action="testimonials"
+             resource="Margo_Testimonials::testimonials"
+        />
+        <add id="Margo_Testimonials::setting"
+             title="Settings"
+             module="Margo_Testimonials"
+             sortOrder="20"
+             parent="Margo_Testimonials::testimonials"
+             action="adminhtml/system_config/edit/section/testimonials"
+             resource="Margo_Testimonials::setting"
+        />
+    </menu>
+</config>

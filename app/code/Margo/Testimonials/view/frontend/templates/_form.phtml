@@ -1,0 +1,45 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: michael
+ * Date: 28.10.17
+ * Time: 16:53
+ */
+
+/**
+ * @var $block \Margo\Testimonials\Block\Form
+ */
+?>
+<!-- The Modal -->
+<div id="testimonialModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <form method="post" action="<?= $block->getUrl('margotestimonials/index/add') ?>" data-role="testimonials-form" class="testimonials__form testimonials__form--js">
+            <div class="testimonials__form_header">
+                <?php echo __('Add testimonial') ?>
+            </div>
+            <input name="form_key" type="hidden" value="<?php echo $block->getFormKey();?>">
+            <textarea name="description" placeholder="Your Text" autofocus></textarea>
+            <button class="testimonials__form_submit" type="submit"><?php echo __('ok') ?></button>
+        </form>
+
+        <div class="modalNoAuth">
+            <span class="modalNoAuth__txt">
+                <?php echo __('You must be logged in to leave a testimonials'); ?>
+            </span>
+            <div class="modal_redirect">
+                <a href="<?= $block->getUrl('/customer/account/login/') ?>">
+                    <?php echo __('Login'); ?>
+                </a>
+            </div>
+        </div>
+
+        <div class="modalThnx">
+            <span class="modalThnx__txt">
+                <?php echo __('Your testimonial will be published after moderation'); ?>
+            </span>
+        </div>
+    </div>
+</div>

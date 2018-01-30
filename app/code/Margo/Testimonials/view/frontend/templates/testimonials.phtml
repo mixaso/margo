@@ -1,0 +1,54 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: michael
+ * Date: 26.10.17
+ * Time: 16:34
+ */
+
+
+/**
+ * @var $block \Margo\Testimonials\Block\Testimonials
+ */
+?>
+
+<div class="testimonials">
+    <?php echo $block->getChildHtml('testimonials.form');?>
+    <?php echo $block->getChildHtml('testimonials.header');?>
+    <?php foreach ($block->getTestimonials() as $testimonial): ?>
+        <div class="testimonials__testimonial">
+            <div class="testimonials__customer">
+                <div class="testimonials__customer_name">
+                    <span>
+                        <?php echo $testimonial->getCustomerFirstName();?>
+                        <?php echo $testimonial->getCustomerLastName();?>
+                    </span>
+                </div>
+                <div class="testimonials__customer_date">
+                    <span>
+                        <?php echo (new DateTime($testimonial->getCreateTime()))->format('d/m/Y'); ?>
+                    </span>
+                </div>
+            </div>
+            <div class="testimonials__text">
+                <div class="testimonials__text_in">
+                    <span>
+                        <?php echo $testimonial->getDescription();?>
+                    </span>
+                </div>
+            </div>
+        </div>
+    <?php endforeach;?>
+    <?php if ($block->getPagerHtml()): ?>
+        <div class="order-products-toolbar toolbar bottom testimonials__toolbar">
+            <?php echo $block->getPagerHtml(); ?>
+        </div>
+    <?php endif ?>
+    <script type="text/x-magento-init">
+    {
+        "*":{
+		    "Margo_Testimonials/js/script": {}
+        }
+    }
+    </script>
+</div>

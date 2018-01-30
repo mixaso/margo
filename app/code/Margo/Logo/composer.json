@@ -1,0 +1,23 @@
+{
+  "name": "margo/logo",
+  "descriotion": "add class to logo img",
+  "type": "magento2-module",
+  "vertion": "0.0.1",
+  "require": {
+    "php": ">=5.5.22|~5.6.0|7.0.2|7.0.4|~7.0.6",
+    "magento/framework": "100.1.*"
+  },
+  "repositories": {
+    "type": "composer",
+    "url": "https://repo.magento.com"
+  },
+  "minimum-stability": "stable",
+  "autoload": {
+    "file": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Margo\\Logo\\": ""
+    }
+  }
+}

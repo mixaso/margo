@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="margo" translate="label" sortOrder="10">
+            <label>Testimonials</label>
+        </tab>
+        <section id="testimonials" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>General</label>
+            <tab>margo</tab>
+            <resource>Margo_Testimonials::testimonials_configuration</resource>
+            <!--<group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">-->
+                <!--<label>General Configuration</label>-->
+                <!--<field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">-->
+                    <!--<label>Module Enable</label>-->
+                    <!--<source_model>Magento\Config\Model\Config\Source\Yesno</source_model>-->
+                <!--</field>-->
+            <!--</group>-->
+            <group id="seo" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Search Engine Optimization</label>
+                <field id="title" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Page Title</label>
+                </field>
+                <field id="keywords" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Page Keywords</label>
+                </field>
+                <field id="description" translate="label" type="text" sortOrder="6" showInDefault="1" showInWebsite="1"
+                       showInStore="1" canRestore="1">
+                    <label>Page Description</label>
+                </field>
+            </group>
+            <group id="testimonials_email" translate="label" type="text" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Email Configuration</label>
+                <field id="email" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Sender Email</label>
+                    <validate>validate-email</validate>
+                    <backend_model>Magento\Config\Model\Config\Backend\Email\Address</backend_model>
+                </field>
+                <field id="name" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Sender Name</label>
+                    <backend_model>Magento\Config\Model\Config\Backend\Email\Sender</backend_model>
+                    <validate>validate-emailSender</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

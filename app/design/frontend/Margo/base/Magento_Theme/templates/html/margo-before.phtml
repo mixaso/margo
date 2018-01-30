@@ -1,0 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: michael
+ * Date: 24.01.18
+ * Time: 17:49
+ */
+$helper = $this->helper('Margo\Demo\Helper\Data');
+$ishome = $helper->getIsHome();
+if ($ishome) {
+    echo $this->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('margo-before')->toHtml();
+}

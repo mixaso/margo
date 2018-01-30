@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 196 58">
+	<style type="text/css">
+		<![CDATA[
+			.style0 {
+			  font-size: 56px;
+			  font-family: 'BodoniBT-Book';
+			  font-weight: 300;
+			  fill: rgb(90,100,101);
+			  text-transform: uppercase;
+			}
+			.style1 {
+			  font-size: 10px;
+			  font-family: "SegoeUI-SemiBold";
+			  fill: rgb(55,55,55);
+			  text-transform: uppercase;
+			}
+		]]>
+	</style>
+	<text transform="translate(-2.00,38.00)" class="style0">
+		<tspan x="0.00 48.38 86.57 120.79 160.88" fill="rgb(89,99,101)">margo</tspan>
+	</text>
+	<text transform="translate(18.00,58.00)" class="style1">
+		<tspan x="0.00 6.00 14.00 21.00 29.00 33.00 42.00 50.00 54.00 64.00 72.00 80.00 87.00 95.00 102.00 110.00 114.00 121.00 129.00 136.00 146.00" fill="rgb(54,54,54)">Fashion Magento Theme</tspan>
+	</text>
+	<circle cx="189.00" cy="55.00" r="2.00" fill="rgb(0,0,0)"/>
+	<circle cx="6.00" cy="55.00" r="2.00" fill="rgb(0,0,0)"/>
+</svg>

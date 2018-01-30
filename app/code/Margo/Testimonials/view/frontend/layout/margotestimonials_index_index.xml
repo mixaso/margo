@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd" layout="1column">
+    <body>
+        <referenceContainer name="content">
+            <block class="Margo\Testimonials\Block\Testimonials" name="testimonials" template="testimonials.phtml">
+                <block class="Margo\Testimonials\Block\Header" cacheable="false" name="testimonials.header" template="_header.phtml"/>
+                <block class="Margo\Testimonials\Block\Form" cacheable="false" name="testimonials.form" template="_form.phtml"/>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="page.main.title" remove="true"/>
+    </body>
+</page>

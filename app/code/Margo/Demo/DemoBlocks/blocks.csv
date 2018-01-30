@@ -1,0 +1,82 @@
+title,identifier,content,is_active,stores
+Footer col 1,pos-footer-1,"<p class=""list-title"">Company Info</p>
+<ul>
+<li><a href=""#"">About Us</a></li>
+<li><a href=""#"">Contact Us</a></li>
+<li><a href=""#"">Sell to CWS</a></li>
+<li><a href=""#"">Terms &amp; Conditions</a></li>
+<li><a href=""#"">Authenticity Guarantee</a></li>
+<li><a href=""#"">Privacy Policy</a></li>
+<li><a href=""{{config path=""web/unsecure/base_url""}}margotestimonials"">Testimonials</a></li>
+</ul>",1,0
+Footer col 2,pos-footer-2,"<p class=""list-title"">HELP CENTER</p>
+<ul>
+<li><a href=""#"">Shipping Policy</a></li>
+<li><a href=""#"">Payment Options</a></li>
+<li><a href=""#"">Order Information</a></li>
+<li><a href=""#"">International Shipping</a></li>
+<li><a href=""#"">Return Policy</a></li>
+<li><a href=""#"">Product Warranty</a></li>
+<li><a href=""#"">Repair Center</a></li>
+<li><a href=""#"">FAQ</a></li>
+</ul>",1,0
+Footer col 3,pos-footer-3,"<p class=""list-title"">MY ACCOUNT</p>
+<ul>
+<li><a href=""#"">Manage Your Account</a></li>
+<li><a href=""#"">Order Status</a></li>
+</ul>
+<p></p>
+<p class=""list-title"">FOLLOW US</p>
+<div class=""footer-soc""><a href=""https://www.facebook.com/sharer/sharer.php?u=[URL TO SHARE]&amp;t=[TITLE]""> <img src=""{{media url=""wysiwyg/soc_icon/fb.png""}}"" width=""35"" height=""35"" /> </a> <a href=""https://plus.google.com/share?url=[URL TO SHARE]""> <img src=""{{media url=""wysiwyg/soc_icon/gplus.png""}}"" width=""35"" height=""35"" /> </a> <a href=""https://pinterest.com/pin/create/button/?url=[LINKBACK URL]&amp;media=[IMAGE TO SHARE]&amp; description=[DESCRIPTION]""> <img src=""{{media url=""wysiwyg/soc_icon/pinteres.png""}}"" width=""35"" height=""35"" /> </a> <a href=""http://twitter.com/home/?status=[TITLE]""> <img src=""{{media url=""wysiwyg/soc_icon/twitter.png""}}"" width=""35"" height=""35"" /> </a></div>",1,0
+Margo Before,margo-before,"<div class=""blocks-promo"">
+    <a class=""block-promo home-main"" href=""{{store url='yourLink'}}"">
+        <img src=""{{media url='wysiwyg/home/banner-lookbook.jpg'}}"">
+        <span class=""content"">
+            <strong class=""title"">LOOKBOOK</strong>
+            <span class=""info"">New Collection</span>
+            <br />
+            <span class=""action more button"">SHOP NOW</span>
+        </span>
+    </a>
+    <div class=""block-promo-wrapper block-promo-hp"">
+        <a class=""block-promo home-compele-your-style"" href=""{{store url='yourLink'}}"">
+            <img src=""{{media url='wysiwyg/home/banner-completeYourStyle.jpg'}}"">
+            <span class=""content""> <strong class=""title"">
+                CONPLETE
+                <br />
+                YOUR STYLE
+            </strong>
+                <span class=""info"">Are You a Man Who Know to Accessorize</span>
+                <span class=""action more button"">SHOP NOW</span>
+            </span>
+        </a>
+        <a class=""block-promo home-show-your-love"" href=""{{store url='yourLink'}}"">
+            <img src=""{{media url='wysiwyg/home/banner-showYourLove.jpg'}}"">
+            <span class=""content"">
+                <strong class=""title"">SHOW YOUR LOVE</strong>
+                <span class=""info"">THIS MOTHER`S DAY</span>
+            </span>
+        </a>
+        <a class=""block-promo home-sale-30"" href=""{{store url='yourLink'}}"">
+            <img src=""{{media url='wysiwyg/home/banner-sale.jpg'}}"">
+            <span class=""content"">
+                <span class=""title"">SALE</span>
+                <span class=""count"">30</span>
+                <span class=""persent"">%</span>
+                <span class=""off"">OFF</span>
+                <span class=""info"">STOREWIDE</span>
+            </span>
+        </a>
+        <a class=""block-promo home-free-shipping"" href=""{{store url='yourLink'}}"">
+            <img src=""{{media url='wysiwyg/home/banner-freeShipping.jpg'}}"">
+            <span class=""content""> <strong class=""title"">FREE SHIPPING</strong>
+                <span class=""info"">With all purchase from $100</span>
+            </span>
+        </a>
+    </div>
+</div>
+<div class=""content-heading"">
+<h2 class=""title"">Hot Sellers</h2>
+<p class=""info"">Here is what`s trending on Luma right now</p>
+</div>
+<p>{{widget type=""Magento\\CatalogWidget\\Block\\Product\\ProductsList"" products_per_page=""8"" products_count=""8"" template=""product/widget/content/grid.phtml"" conditions_encoded=""a:2:[i:1;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Combine`;s:10:`aggregator`;s:3:`all`;s:5:`value`;s:1:`1`;s:9:`new_child`;s:0:``;]s:4:`1--1`;a:4:[s:4:`type`;s:50:`Magento|CatalogWidget|Model|Rule|Condition|Product`;s:9:`attribute`;s:3:`sku`;s:8:`operator`;s:2:`()`;s:5:`value`;s:60:`WS12, WT09, MT07, MH07, 24-MB02, 24-WB04, 241-MB08, 240-LV05`;]]""}}</p>",1,0

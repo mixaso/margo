@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel" display="false"/>
+
+        <referenceContainer name="header.container">
+            <referenceContainer name="header-wrapper" label="Page Header" htmlTag="div" htmlClass="header content">
+                <block class="Magento\Framework\View\Element\Template" name="top.search" as="topSearch" template="Magento_Search::form.mini.phtml" />
+                <block class="Margo\Logo\Block\Html\Header\Logo" name="logo">
+                    <arguments>
+                        <argument name="logo_img_width" xsi:type="number">200</argument>
+                        <argument name="logo_img_height" xsi:type="number">60</argument>
+                        <argument name="logo_class" xsi:type="string">svg-js</argument>
+                    </arguments>
+                </block>
+                <container name="headerLinks"  label="Page Header Link" as="headerLinks" htmlTag="div"
+                           htmlClass="header content__links">
+                    <referenceBlock name="header.links" remove="false">
+                        <block class="Magento\Customer\Block\Account\RegisterLink" name="register-link">
+                            <arguments>
+                                <argument name="label" xsi:type="string" translate="true">Create an Account</argument>
+                            </arguments>
+                        </block>
+                        <block class="Magento\Customer\Block\Account\AuthorizationLink" name="authorization-link"/>
+                    </referenceBlock>
+                </container>
+            </referenceContainer>
+        </referenceContainer>
+        <referenceContainer name="main.content">
+            <referenceContainer name="content">
+                <block name="margo-before" class="Magento\Framework\View\Element\Template" template="Magento_Theme::html/margo-before.phtml">
+                    <block name="margo-before-in" class="Magento\Cms\Block\Block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">margo-before</argument>
+                        </arguments>
+                    </block>
+                </block>
+            </referenceContainer>
+        </referenceContainer>
+        <referenceContainer name="footer" >
+            <referenceBlock name="footer_links" remove="true" />
+
+            <container name="footer-cols" label="Footer Cols" htmlTag="div" htmlClass="footer-cols">
+
+                <block name="footer-1" class="Magento\Framework\View\Element\Template" template="Magento_Theme::html/footer-col.phtml">
+                    <block name="pos-footer-1" class="Magento\Cms\Block\Block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">pos-footer-1</argument>
+                        </arguments>
+                    </block>
+                </block>
+
+                <block name="footer-2" class="Magento\Framework\View\Element\Template" template="Magento_Theme::html/footer-col.phtml">
+                    <block name="pos-footer-2" class="Magento\Cms\Block\Block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">pos-footer-2</argument>
+                        </arguments>
+                    </block>
+                </block>
+
+                <block name="footer-3" class="Magento\Framework\View\Element\Template" template="Magento_Theme::html/footer-col.phtml">
+                    <block name="pos-footer-3" class="Magento\Cms\Block\Block">
+                        <arguments>
+                            <argument name="block_id" xsi:type="string">pos-footer-3</argument>
+                        </arguments>
+                    </block>
+                </block>
+
+                <block name="footer-4" class="Magento\Framework\View\Element\Template"
+                       template="Magento_Theme::html/footer-col.phtml"/>
+
+            </container>
+
+        </referenceContainer>
+        <referenceBlock name="wish-list-link" remove="true"/>
+        <referenceBlock name="authorization-link" remove="true"/>
+        <referenceBlock name="my-account-link" remove="true"/>
+        <move element="header.links" destination="headerLinks" after="minicart"/>
+        <move element="form.subscribe" destination="footer-4" />
+        <move element="copyright" destination="footer" />
+    </body>
+</page>

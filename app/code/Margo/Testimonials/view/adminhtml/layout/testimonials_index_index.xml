@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Testimonials</title>
+    </head>
+    <update handle="styles"/>
+    <body>
+        <!--<referenceBlock name="menu">-->
+            <!--<action method="setActive">-->
+                <!--<argument name="itemId" xsi:type="string">Margo_Testimonials::margo_testimonials</argument>-->
+            <!--</action>-->
+        <!--</referenceBlock>-->
+        <referenceContainer name="page.main.actions">
+            <block class="Magento\Backend\Block\Store\Switcher" name="store_switcher" template="Magento_Backend::store/switcher.phtml"/>
+        </referenceContainer>
+        <referenceContainer name="content">
+            <uiComponent name="testimonials_index_listing"/>
+        </referenceContainer>
+    </body>
+</page>
